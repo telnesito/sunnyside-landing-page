@@ -40,6 +40,8 @@ const Comments = () => {
       gap={'70px'}
       paddingBottom={'70px'}
       paddingTop={'70px'}
+
+
     >
 
       <Typography
@@ -52,10 +54,19 @@ const Comments = () => {
 
       <Box
         display={'flex'}
-        flexDirection={'column'}
         justifyContent={'center'}
         alignItems={'center'}
         gap={'50px'}
+
+        sx={{
+          flexDirection: {
+            xl: 'row',
+            lg: 'row',
+            md: 'row',
+            sm: 'column',
+            xs: 'column'
+          }
+        }}
 
       >
         {testimonials.map(({ image, comment, name, ocupation }, index) => <Box
