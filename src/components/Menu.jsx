@@ -23,6 +23,7 @@ const MenuMobile = ({ open, handleClose, anchorEl }) => {
         <MenuItem
           sx={{
             width: '100%'
+
           }}
           onClick={handleClose}
         >

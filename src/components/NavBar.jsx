@@ -1,4 +1,4 @@
-import { Box, IconButton, Typography } from '@mui/material'
+import { Box, Button, IconButton, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 import Menu from './Menu';
@@ -25,6 +25,9 @@ const NavBar = () => {
       width={'100%'}
       alignItems={'center'}
       justifyContent={'space-between'}
+      height={'70px'}
+      gap={'10px'}
+
     >
       <Typography
         fontFamily={'Barlow'}
@@ -33,7 +36,61 @@ const NavBar = () => {
         color={'white'}
         paddingLeft={'30px'}
       >sunnyside</Typography>
+
+      <Box
+
+        sx={{
+          display: {
+            xl: 'flex',
+            lg: 'flex',
+            md: 'flex',
+            sm: 'flex',
+            xs: 'none'
+          }
+        }}
+        display={'flex'}
+        gap={'40px'}
+        alignItems={'center'}
+        paddingRight={'30px'}
+      >
+        <Typography
+          fontFamily={'Barlow'}
+          color={'white'}
+        >About</Typography>
+        <Typography
+          fontFamily={'Barlow'}
+          color={'white'}
+        >Services</Typography>
+        <Typography
+          fontFamily={'Barlow'}
+          color={'white'}
+        >Projects</Typography>
+
+        <Button
+          variant='contained'
+          sx={{
+            bgcolor: 'white',
+            color: 'black',
+            borderRadius: '25px',
+            padding: '10px',
+            width: '135px',
+            fontFamily: 'Fraunces'
+          }}
+        >contact</Button>
+
+
+      </Box>
+
       <IconButton
+        sx={{
+          display: {
+            xl: 'none',
+            lg: 'none',
+            md: 'none',
+            sm: 'none',
+            xs: 'block'
+          }
+        }}
         onClick={handleClick}
         size='large'>
         <MenuIcon fontSize='large' sx={{
