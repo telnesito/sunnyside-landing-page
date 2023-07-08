@@ -1,5 +1,8 @@
 import { Box } from '@mui/material'
 import Hero from './components/Hero'
+import Egg from './components/Egg'
+import Couple from './components/Couple'
+import Graphic from './components/Graphic'
 
 function App() {
 
@@ -11,6 +14,9 @@ function App() {
       bgcolor={'gray'}
     >
       <Hero />
+      <Egg />
+      <Couple />
+      <Graphic />
     </Box>
   )
 }

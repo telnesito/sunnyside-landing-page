@@ -31,7 +31,7 @@ const Hero = () => {
           fontSize={'40px'}
           width={'90%'}
           fontWeight={'900'}
-          letterSpacing={'8px'}
+          letterSpacing={'4px'}
 
           fontFamily={'Fraunces'}
           color={'white'}
