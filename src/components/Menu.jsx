@@ -28,6 +28,8 @@ const MenuMobile = ({ open, handleClose, anchorEl }) => {
           onClick={handleClose}
         >
           <Typography
+            component={'a'}
+            href='#about'
             textAlign={'center'}
             width={'100%'}
             fontFamily={'Barlow'}
@@ -45,6 +47,8 @@ const MenuMobile = ({ open, handleClose, anchorEl }) => {
           onClick={handleClose}
         >
           <Typography
+            component={'a'}
+            href='#services'
             textAlign={'center'}
             width={'100%'}
             fontFamily={'Barlow'}
@@ -64,6 +68,8 @@ const MenuMobile = ({ open, handleClose, anchorEl }) => {
           onClick={handleClose}
         >
           <Typography
+            component={'a'}
+            href='#projects'
             textAlign={'center'}
             width={'100%'}
             fontFamily={'Barlow'}
@@ -85,6 +91,7 @@ const MenuMobile = ({ open, handleClose, anchorEl }) => {
           onClick={handleClose}
         >
           <Button
+            href='#footer'
             sx={{
               bgcolor: 'hsl(51, 100%, 49%)',
               color: 'black',

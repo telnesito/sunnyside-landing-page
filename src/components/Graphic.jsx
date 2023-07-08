@@ -4,6 +4,7 @@ import React from 'react'
 const Graphic = () => {
   return (
     <Box
+      id={'services'}
       display={'flex'}
       width={'100%'}
 

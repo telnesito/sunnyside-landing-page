@@ -29,6 +29,7 @@ const Comments = () => {
 
   return (
     <Box
+      id={'projects'}
       display={'flex'}
       flexDirection={'column'}
       width={'100%'}

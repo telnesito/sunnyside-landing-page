@@ -4,6 +4,8 @@ import React from 'react'
 const Egg = () => {
   return (
     <Box
+      id={'about'}
+
       display={'flex'}
 
       sx={{
@@ -19,6 +21,7 @@ const Egg = () => {
     >
 
       <Box
+
         width={'100%'}
         minHeight={'400px'}
         sx={{

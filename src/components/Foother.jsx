@@ -4,6 +4,7 @@ import React from 'react'
 const Foother = () => {
   return (
     <Box
+      id={'footer'}
       display={'flex'}
       flexDirection={'column'}
       width={'100%'}
@@ -28,12 +29,16 @@ const Foother = () => {
         justifyContent={'center'}
       >
         <Typography
+          component={'a'}
+          href='#about'
           fontSize={'18px'}
           color={'hsl(168, 34%, 41%)'}
           fontFamily={'Barlow'}
 
         >About</Typography>
         <Typography
+          component={'a'}
+          href='#services'
           fontSize={'18px'}
 
           color={'hsl(168, 34%, 41%)'}
@@ -42,6 +47,8 @@ const Foother = () => {
 
         >Services</Typography>
         <Typography
+          component={'a'}
+          href='#projects'
           fontSize={'18px'}
 
           color={'hsl(168, 34%, 41%)'}
