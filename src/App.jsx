@@ -5,6 +5,7 @@ import Couple from './components/Couple'
 import Graphic from './components/Graphic'
 import Comments from './components/Comments'
 import Gallery from './components/Gallery'
+import Foother from './components/Foother'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Graphic />
       <Comments />
       <Gallery />
+      <Foother />
     </Box>
   )
 }
