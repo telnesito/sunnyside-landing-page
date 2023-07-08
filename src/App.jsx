@@ -4,6 +4,7 @@ import Egg from './components/Egg'
 import Couple from './components/Couple'
 import Graphic from './components/Graphic'
 import Comments from './components/Comments'
+import Gallery from './components/Gallery'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Couple />
       <Graphic />
       <Comments />
+      <Gallery />
     </Box>
   )
 }
