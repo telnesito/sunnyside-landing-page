@@ -44,7 +44,7 @@ const NavBar = () => {
             xl: 'flex',
             lg: 'flex',
             md: 'flex',
-            sm: 'flex',
+            sm: 'none',
             xs: 'none'
           }
         }}
@@ -92,7 +92,7 @@ const NavBar = () => {
             xl: 'none',
             lg: 'none',
             md: 'none',
-            sm: 'none',
+            sm: 'block',
             xs: 'block'
           }
         }}
