@@ -74,7 +74,12 @@ const NavBar = () => {
             borderRadius: '25px',
             padding: '10px',
             width: '135px',
-            fontFamily: 'Fraunces'
+            fontFamily: 'Fraunces',
+            "&:hover": {
+              bgcolor: '#00000010',
+              color: 'white'
+
+            }
           }}
         >contact</Button>
 

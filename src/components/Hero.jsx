@@ -8,7 +8,13 @@ const Hero = () => {
       width={'100%'}
       height={'600px'}
       sx={{
-        backgroundImage: 'url(./mobile/image-header.jpg)',
+        backgroundImage: {
+          xl: 'url(./desktop/image-header.jpg)',
+          lg: 'url(./desktop/image-header.jpg)',
+          md: 'url(./desktop/image-header.jpg)',
+          sm: 'url(./desktop/image-header.jpg)',
+          xs: 'url(./mobile/image-header.jpg)'
+        },
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
@@ -27,14 +33,23 @@ const Hero = () => {
       >
         <Typography
           textAlign={'center'}
-          variant='h4'
-          fontSize={'40px'}
           width={'90%'}
           fontWeight={'900'}
           letterSpacing={'4px'}
 
           fontFamily={'Fraunces'}
           color={'white'}
+
+          sx={{
+            fontSize: {
+              xl: '70px',
+              lg: '70px',
+              md: '70px',
+              sm: '40px',
+              xs: '40px'
+            }
+          }}
+
         >
           WE ARE CREATIVES
         </Typography>
