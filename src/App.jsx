@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Egg from './components/Egg'
 import Couple from './components/Couple'
 import Graphic from './components/Graphic'
+import Comments from './components/Comments'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Egg />
       <Couple />
       <Graphic />
+      <Comments />
     </Box>
   )
 }
