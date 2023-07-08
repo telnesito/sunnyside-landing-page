@@ -5,8 +5,17 @@ const Graphic = () => {
   return (
     <Box
       display={'flex'}
-      flexDirection={'column'}
       width={'100%'}
+
+      sx={{
+        flexDirection: {
+          xl: 'row',
+          lg: 'row',
+          md: 'row',
+          sm: 'row',
+          xs: 'column'
+        }
+      }}
     >
 
       <Box
@@ -19,7 +28,13 @@ const Graphic = () => {
         flexDirection={'column'}
         paddingBottom={'40px'}
         sx={{
-          backgroundImage: 'url(./mobile/image-graphic-design.jpg)',
+          backgroundImage: {
+            xl: 'url(./desktop/image-graphic-design.jpg)',
+            lg: 'url(./desktop/image-graphic-design.jpg)',
+            md: 'url(./desktop/image-graphic-design.jpg)',
+            sm: 'url(./desktop/image-graphic-design.jpg)',
+            xs: 'url(./mobile/image-graphic-design.jpg)'
+          },
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -64,7 +79,13 @@ const Graphic = () => {
         flexDirection={'column'}
         paddingBottom={'40px'}
         sx={{
-          backgroundImage: 'url(./mobile/image-photography.jpg)',
+          backgroundImage: {
+            xl: 'url(./desktop/image-photography.jpg)',
+            lg: 'url(./desktop/image-photography.jpg)',
+            md: 'url(./desktop/image-photography.jpg)',
+            sm: 'url(./desktop/image-photography.jpg)',
+            xs: 'url(./mobile/image-photography.jpg)'
+          },
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'

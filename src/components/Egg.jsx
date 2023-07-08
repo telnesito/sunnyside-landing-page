@@ -5,15 +5,30 @@ const Egg = () => {
   return (
     <Box
       display={'flex'}
-      flexDirection={'column'}
+
+      sx={{
+        flexDirection: {
+          xl: 'row',
+          lg: 'row',
+          md: 'row',
+          sm: 'row',
+          xs: 'column'
+        }
+      }}
       width={'100%'}
     >
 
       <Box
         width={'100%'}
-        height={'400px'}
+        minHeight={'400px'}
         sx={{
-          backgroundImage: 'url(./mobile/image-transform.jpg)',
+          backgroundImage: {
+            xl: 'url(./desktop/image-transform.jpg)',
+            lg: 'url(./desktop/image-transform.jpg)',
+            md: 'url(./desktop/image-transform.jpg)',
+            sm: 'url(./desktop/image-transform.jpg)',
+            xs: 'url(./mobile/image-transform.jpg)'
+          },
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
@@ -36,6 +51,7 @@ const Egg = () => {
           fontWeight={'900'}
           textAlign={'center'}
           fontFamily={'Fraunces'}
+          width={'90%'}
         >Transform your brand</Typography>
 
         <Typography

@@ -5,14 +5,28 @@ const Couple = () => {
   return (
     <Box
       display={'flex'}
-      flexDirection={'column'}
       width={'100%'}
+      sx={{
+        flexDirection: {
+          xl: 'row-reverse',
+          lg: 'row-reverse',
+          md: 'row-reverse',
+          sm: 'row-reverse',
+          xs: 'column'
+        }
+      }}
     >
       <Box
         width={'100%'}
-        height={'400px'}
+        minHeight={'400px'}
         sx={{
-          backgroundImage: 'url(./mobile/image-stand-out.jpg)',
+          backgroundImage: {
+            xl: 'url(./desktop/image-stand-out.jpg)',
+            lg: 'url(./desktop/image-stand-out.jpg)',
+            md: 'url(./desktop/image-stand-out.jpg)',
+            sm: 'url(./desktop/image-stand-out.jpg)',
+            xs: 'url(./mobile/image-stand-out.jpg)'
+          },
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
